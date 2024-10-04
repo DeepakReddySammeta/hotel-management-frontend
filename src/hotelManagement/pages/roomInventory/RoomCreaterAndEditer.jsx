@@ -279,7 +279,7 @@ const RoomCreatorAndEditor = () => {
             : createRoomAction(formData)
         );
         console.log("Room Creation/Update", { response });
-        navigate("/rooms-inventory"); // Redirect after creation/update
+        navigate("/admin/rooms-inventory"); // Redirect after creation/update
         toast.success(
           location.pathname.includes("/edit-room")
             ? "Room updated successfully!"
